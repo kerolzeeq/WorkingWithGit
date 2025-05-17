@@ -103,7 +103,7 @@
       <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="651.3333333333333,2642.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="651.3333333333333,2819.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="Phone" />
       <Variable x:TypeArguments="x:String" Name="Name" />
@@ -117,13 +117,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge: ACME System 1 - Employees" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,2620" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="7d0a2614-10a0-4401-8717-01720a6136f3" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge: ACME System 1 - Employees" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,2796.6666666666665" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="7d0a2614-10a0-4401-8717-01720a6136f3" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,2378" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,2554.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Default="Brad M Roberts" Name="EmployeeName" />
             </Sequence.Variables>
@@ -132,6 +132,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;test&quot;]" />
             <uix:NGetText DisplayName="Get Text 'Brad M Roberts'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,191.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="7d0a2614-10a0-4401-8717-01720a6136f3" TextString="[EmployeeName]" Version="V4">
               <uix:NGetText.Target>
                 <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/employees" CVScreenId="6207a7dc-72b9-4888-b824-01a25dbd7aae" ContentHash="Ycz3uVFhY0uwzN5lKjz0Ng" CvType="AnyWordGroup" DesignTimeRectangle="701, 297, 540, 15" DesignTimeScaleFactor="0.75" ElementType="Text" FullSelectorArgument="&lt;webctrl id='candidateName' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='candidateName' tag='DIV' type='' class='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="9d8c9aac-eafb-40aa-8ddb-b96d3b616d10" InformativeScreenshot="0f99803e5d74c6b807d6a2d8f26d633a.png" Reference="KFdKuJDnJE-ne45qMcuzVQ/XNI9lZWuvkqBv8l1yFjUcQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Employees' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive">
@@ -240,7 +241,7 @@
                 </uix:TargetAnchorable>
               </uix:NGetText.Target>
             </uix:NGetText>
-            <ui:GenerateDataTable ColumnSizes="{x:Null}" Positions="{x:Null}" AutoDetectTypes="False" CSVParsing="False" ColumnSeparators="," DataTable="[dt_Employee]" DisplayName="Generate Data Table From Text" sap:VirtualizedContainerService.HintSize="416,236" sap2010:WorkflowViewState.IdRef="GenerateDataTable_1" Input="[&quot;Name,Phone,Birthdate,Email&quot; +Environment.NewLine +&#xD;&#xA;Name + &quot;, &quot; + Phone + &quot;, &quot; + Birthdate + &quot;, &quot; + Email]" NewLineSeparator="&#xA;" UseColumnHeader="True" />
+            <ui:GenerateDataTable ColumnSizes="{x:Null}" Positions="{x:Null}" AutoDetectTypes="False" CSVParsing="False" ColumnSeparators="," DataTable="[dt_Employee]" DisplayName="Generate Data Table From Text" sap:VirtualizedContainerService.HintSize="416,236" sap2010:WorkflowViewState.IdRef="GenerateDataTable_1" Input="[&quot;Name,Phone,Birthdate,Email&quot; +Environment.NewLine +&#xA;Name + &quot;, &quot; + Phone + &quot;, &quot; + Birthdate + &quot;, &quot; + Email]" NewLineSeparator="&#xA;" UseColumnHeader="True" />
             <ui:OutputDataTable DataTable="[dt_Employee]" DisplayName="Output Data Table as Text" sap:VirtualizedContainerService.HintSize="416,114" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[strOut]" />
             <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[strOut]" />
             <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[dt_Employee]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="416,148" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" WorkbookPath="Outputs.xlsx" />
